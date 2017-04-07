@@ -1,0 +1,120 @@
+//Barra de Navegação
+.navegacao{
+    z-index: 5;
+    position: fixed;
+    background: transparent;
+    height: 4em;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.opcao-nav{
+    order: 3;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    width: 30%;
+
+    button{
+        background: white;
+    }
+
+    a {
+      margin-left: 1em;
+      margin-right: 1em;  
+      text-decoration: none;
+      color: $cor-0;
+      //transition: all .5s ease;
+
+        &:hover {
+        color: $cor-3;
+        }
+    }
+
+}
+
+.scroll{
+    background: $cor-0;
+
+    a{
+        color: $cor-2;
+        &:hover{
+            color: $cor-3;
+        }
+    }
+}
+
+.logo{
+	width: 56px;
+    height: 56px;
+	text-decoration: none;
+	font-size: 0;
+}
+
+@media screen and (max-width: 768px){
+
+    .navegacao{
+        justify-content: space-between;
+        z-index: 6;
+
+        &.open{
+            background: $cor-0;
+            justify-content: space-between;
+            ul{ 
+                margin: 0;
+                padding: 0;
+                top: 4em;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background: $cor-0;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                z-index: 5;
+                position: fixed;
+                overflow: hidden;
+                //transition: background-color 0.5s ease-out;
+
+                li{
+                    padding: 0.5em;
+                    font-size: 1.5em;
+                    text-align: center;
+                    //transition: background-color 0.5s ease-out;
+
+                    a{
+                        color: $cor-2;
+                        &:hover{
+                            color: $cor-1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .opcao-nav{
+            display: none;
+    }
+
+    .navegacao-scroll{
+        justify-content: space-between;
+    }
+    
+    .opcao-nav-scroll{
+            display: none;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background: #d9d9d9;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: #465362;
+}

@@ -1,0 +1,81 @@
+.footer-contato{
+    //-js-display: flex;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 700px;
+    
+}
+
+.main-footer{
+    padding-top: 2em;
+    padding-bottom: 2em;
+    display: flex;
+    width: 1000px;   
+}
+
+.form-contato{
+    flex: 1.5;
+    padding: 1em;
+}
+
+.contatos{
+    flex:1;
+    padding: 1em;
+}
+
+.contato-info{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+
+    p{
+        i{
+            margin-right: 20px;
+        }
+    }
+}
+
+.social-contato{
+    display: flex;
+    margin-top: 50px;
+
+    i{
+        margin-right: 20px;
+        cursor: pointer;
+    }
+}
+
+.input-contato{
+    display: flex;
+}
+
+.input-item{
+    flex: 1;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 768px){
+
+    .main-footer{
+        flex-direction: column;
+        font-size: 0.8em;
+    }
+
+    .input-contato{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contatos{
+        flex:1;
+        padding: 1em;
+    }
+
+    .social-contato{
+          justify-content: center;
+    }
+
+}
+
+

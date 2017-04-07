@@ -1,0 +1,51 @@
+
+img.responsive-img,
+video.responsive-video {
+  max-width: 100%;
+  height: auto;
+}
+
+.paralax-header{
+    -js-display: flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #d9d9d9;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    position: fixed;
+    height: 600px;
+    z-index: 1;
+}
+
+.tit-header{
+    min-width: 290px;
+    max-width: 600px;
+    line-height: 1em;
+	margin: 0 auto;
+    font-size: 3em;
+    color: white;
+    text-align: center;
+    z-index: 4;
+    font-family: $font-2;
+    font-weight: 300;
+}
+
+.main-index{
+    -js-display: flex;
+    display: flex;
+    flex-direction: column;
+}
+
+.main{
+    -js-display: flex;
+    display: flex;
+    flex-direction: column;
+    top: 600px;
+    height: auto;
+    background: white;
+    z-index: 2;
+    position: relative;
+}
